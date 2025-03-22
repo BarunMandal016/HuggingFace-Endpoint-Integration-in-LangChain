@@ -3,7 +3,10 @@ from decouple import config
 HUGGINGFACEHUB_API_TOKEN = config('HUGGINGFACEHUB_API_TOKEN')
 from langchain_core.prompts import PromptTemplate
 from langchain_core.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
-
+# from langchain_community.vectorstores import Chroma
+# from langchain.document_loaders import DirectoryLoader
+# from langchain.text_splitter import RecursiveCharacterTextSplitter
+# from langchain.schema import Document
 question = "give me 500 word on gautam buddha "
 
 template = """Question: {question}
